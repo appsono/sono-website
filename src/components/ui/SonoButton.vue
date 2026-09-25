@@ -32,8 +32,8 @@ defineProps({
   line-height: 1;
   text-decoration: none;
   transition:
-    transform var(--duration-fast) ease,
-    background-color var(--duration-fast) ease;
+    border-radius var(--duration-normal) ease,
+    background-color var(--duration-normal) ease;
 }
 
 .icon {

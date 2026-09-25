@@ -27,6 +27,7 @@ const svg = computed(() => icons[`../assets/icons/${props.name}.svg`]);
 
   :deep(svg) {
     width: 100%;
+    height: 100%;
   }
 }
 </style>
