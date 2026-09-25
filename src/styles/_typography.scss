@@ -1,0 +1,18 @@
+.headline {
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+
+  span {
+    padding-inline: 0.08em;
+    background: linear-gradient(
+      transparent 52%,
+      var(--mark) 52%,
+      var(--mark) 92%,
+      transparent 92%
+    );
+    -webkit-box-direction-break: clone;
+    box-decoration-break: clone;
+  }
+}

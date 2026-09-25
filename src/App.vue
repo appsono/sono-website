@@ -1,3 +1,7 @@
+<script setup>
+import SonoButton from "./components/ui/SonoButton.vue";
+</script>
+
 <template>
-  <main></main>
+  <SonoButton href="#" icon="googleplay">Google Play</SonoButton>
 </template>
