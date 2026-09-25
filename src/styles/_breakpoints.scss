@@ -1,9 +1,9 @@
-@use 'sass:map';
+@use "sass:map";
 
 $breakpoints: (
   tablet: 600px,
   split: 860px,
-  desktop: 860px,
+  desktop: 1200px,
 );
 
 @mixin up($name) {
