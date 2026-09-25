@@ -1,0 +1,105 @@
+:root {
+  color-scheme: light;
+
+  --primary: #e5306f;
+  --accent-start: #ff4893;
+  --accent-end: #ff72ac;
+
+  --bg-primary: #f5f5f5;
+  --bg-container: #ffffff;
+  --bg-container-translucent: rgba(255, 255, 255, 0.6);
+  --bg-surface: rgba(0, 0, 0, 0.05);
+  --bg-surface-hover: rgba(0, 0, 0, 0.08);
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #5c5c5c;
+  --text-tertiary: #787878;
+  --text-light: #ffffff;
+
+  --border-light-10: rgba(0, 0, 0, 0.1);
+
+  --accent-blue: #1e88e5;
+  --accent-green: #43a047;
+  --accent-purple: #8324aa;
+  --accent-orange: #fb8c00;
+
+  --shadow-nav: 0 10px 12.5px -5px rgba(0, 0, 0, 0.08);
+
+  --tint-pink: #fbe1eb;
+  --mark-pink: #f7b9d0;
+  --glyph-pink: #f6c6d8;
+  --tint-peach: #fbe7dd;
+  --mark-peach: #f5c8b3;
+  --glyph-peach: #f4d2c2;
+  --tint-sage: #e4eedd;
+  --mark-sage: #c4ddb3;
+  --glyph-sage: #cfe4c2;
+  --tint-lilac: #e9e4f6;
+  --mark-lilac: #ccc0ee;
+  --glyph-lilac: #d6cdf1;
+  --tint-sky: #dee8f1;
+  --mark-sky: #b9cfe4;
+  --glyph-sky: #c8d9ea;
+
+  // ==== sizes ====
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+  --radius-nav: 30px;
+  --radius-panel: 36px;
+
+  --player-height: 70px;
+
+  // ==== typography ====
+  --font-primary:
+    "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Varela Round", "Poppins", system-ui, sans-serif;
+
+  // ==== durations ====
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 350ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --primary: #ff4893;
+
+    --bg-primary: #212121;
+    --bg-container: #2d2d2d;
+    --bg-container-translucent: rgba(45, 45, 45, 0.6);
+    --bg-surface: rgba(255, 255, 255, 0.05);
+    --bg-surface-hover: rgba(255, 255, 255, 0.08);
+
+    --text-primary: #e0e0e0;
+    --text-secondary: #acacac;
+    --text-tertiary: #a0a0a0;
+
+    --border-light-10: rgba(255, 255, 255, 0.1);
+
+    --accent-blue: #64b5f6;
+    --accent-green: #66bb6a;
+    --accent-purple: #ba68c8;
+    --accent-orange: #ffa726;
+
+    --shadow-nav: 0 10px 12.5px -5px rgba(0, 0, 0, 0.02);
+
+    --tint-pink: #3a2530;
+    --mark-pink: #6e2e4a;
+    --glyph-pink: #4a2b3a;
+    --tint-peach: #382b25;
+    --mark-peach: #6a4131;
+    --glyph-peach: #47342b;
+    --tint-sage: #282124;
+    --mark-sage: #41483a;
+    --glyph-sage: #333f2e;
+    --tint-lilac: #2c2839;
+    --mark-lilac: #2c2839;
+    --glyph-lilac: #4a3f70;
+    --tint-sky: #25303a;
+    --mark-sky: #3a5068;
+    --glyph-sky: #2f3d4b;
+  }
+}
