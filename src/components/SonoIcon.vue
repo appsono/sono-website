@@ -15,19 +15,18 @@ const svg = computed(() => icons[`../assets/icons/${props.name}.svg`]);
 </script>
 
 <template>
-  <span class="sono-icon" aria-hiddeb="true" v-html="svg" />
+  <span class="sono-icon" aria-hidden="true" v-html="svg" />
 </template>
 
 <style lang="scss" scoped>
 .sono-icon {
   display: inline-flex;
   flex: none;
-  width: 1rem;
-  height: 1rem;
+  width: 1em;
+  height: 1em;
 
   :deep(svg) {
     width: 100%;
-    height: 100%;
   }
 }
 </style>
