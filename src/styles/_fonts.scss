@@ -1,0 +1,16 @@
+@mixin face($family, $file, $weight) {
+  @font-face {
+    font-family: $family;
+    src: url("../assets/fonts/#{$file}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+@include face("Poppins", "Poppins-Regular", 400);
+@include face("Poppins", "Poppins-Medium", 500);
+@include face("Poppins", "Poppins-SemiBold", 600);
+@include face("Poppins", "Poppins-Bold", 700);
+@include face("Poppins", "Poppins-ExtraBold", 800);
+@include face("Varela Round", "VarelaRound-Regular", 400);
