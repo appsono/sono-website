@@ -35,7 +35,7 @@ defineProps({
 
 :slotted(.glyph) {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   color: var(--glyph);
   pointer-events: none;
 }
