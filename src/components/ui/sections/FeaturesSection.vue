@@ -62,7 +62,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         :x="62"
         :y="20"
       >
-        <template #title><span>Audio Tuning</span></template>
+        <template #title><span>Audio Tuning</span>, from EQ to pitch</template>
       </FeaturePanel>
       <FeaturePanel
         tint="sage"
