@@ -1,0 +1,19 @@
+name: deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Build image
+        run: docker build -t sono-website .
+
+      - name: Trigger portainer redeploy
+        run: curl -fsS -X POST "$WEBHOOK_URL"
+        env:
+          WEBHOOK_URL: ${{ secrets.PORTAINER_WEBHOOK_URL }}
