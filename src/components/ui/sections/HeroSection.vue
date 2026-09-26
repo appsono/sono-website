@@ -155,4 +155,20 @@ import nowPlaying from "../../../assets/screenshots/now-playing.webp";
     top: 170px;
   }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .phone {
+    animation: rise 1100ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+
+  .back {
+    animation-delay: 150ms;
+  }
+}
+
+@keyframes rise {
+  from {
+    translate: 0 160px;
+  }
+}
 </style>
