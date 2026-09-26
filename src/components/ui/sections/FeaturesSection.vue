@@ -11,10 +11,12 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
 <template>
   <section id="features">
     <div class="intro">
-      <h2>Made for people that still own their music files.</h2>
+      <h2 class="section-title">
+        Made for people that still own their music files.
+      </h2>
       <p>
-        Sono plays the music your already own. No streaming, no account, no ads,
-        not tracking.
+        Sono plays the music you already own. No streaming, no account, no ads,
+        no tracking.
       </p>
     </div>
 
@@ -98,10 +100,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
   padding: 96px 8px 32px;
 
   h2 {
-    margin-bottom: var(--font-heading);
-    font-size: clamp(28px, 4vw, 36px);
-    font-weight: 400;
-    line-height: 1.2;
+    margin-bottom: 12px;
   }
 
   p {
