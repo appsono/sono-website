@@ -29,7 +29,7 @@ defineProps({
   padding: 0 22px;
   border-radius: var(--radius-lg);
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1;
   text-decoration: none;
   transition: border-radius var(--duration-normal) ease;
