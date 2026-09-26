@@ -1,14 +1,14 @@
 <script setup>
+import HeroSection from "./components/ui/sections/HeroSection.vue";
 import SiteHeader from "./components/ui/SiteHeader.vue";
-import SonoButton from "./components/ui/SonoButton.vue";
 </script>
 
 <template>
   <div class="layout">
     <SiteHeader />
-    <SonoButton href="#" icon="googleplay">Google Play</SonoButton>
-
-    <main></main>
+    <main>
+      <HeroSection />
+    </main>
   </div>
 </template>
 
