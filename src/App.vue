@@ -1,4 +1,5 @@
 <script setup>
+import FeaturesSection from "./components/ui/sections/FeaturesSection.vue";
 import HeroSection from "./components/ui/sections/HeroSection.vue";
 import SiteHeader from "./components/ui/SiteHeader.vue";
 </script>
@@ -8,6 +9,7 @@ import SiteHeader from "./components/ui/SiteHeader.vue";
     <SiteHeader />
     <main>
       <HeroSection />
+      <FeaturesSection />
     </main>
   </div>
 </template>
