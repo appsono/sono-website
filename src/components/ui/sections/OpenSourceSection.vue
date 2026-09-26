@@ -31,7 +31,7 @@ const links = [
 </script>
 
 <template>
-  <SonoPanel tint="butter" class="open">
+  <SonoPanel v-reveal tint="butter" class="open">
     <SonoIcon name="polygon" class="glyph" />
 
     <div class="copy">

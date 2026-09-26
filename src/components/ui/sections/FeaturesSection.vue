@@ -22,6 +22,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
 
     <div class="grid">
       <FeaturePanel
+        v-reveal
         tint="peach"
         glyph="home"
         :image="home"
@@ -34,6 +35,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         Recently added, albums, artists and recently played on one home screen.
       </FeaturePanel>
       <FeaturePanel
+        v-reveal
         tint="sky"
         glyph="search"
         :image="search"
@@ -45,6 +47,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         <template #title><span>Search</span> your whole library</template>
       </FeaturePanel>
       <FeaturePanel
+        v-reveal
         tint="pink"
         glyph="lyrics"
         :image="lyrics"
@@ -56,6 +59,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         <template #title><span>Synced Lyrics</span>, even offline</template>
       </FeaturePanel>
       <FeaturePanel
+        v-reveal
         tint="lilac"
         glyph="equalizer"
         :image="equalizer"
@@ -67,6 +71,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         <template #title><span>Audio Tuning</span>, from EQ to pitch</template>
       </FeaturePanel>
       <FeaturePanel
+        v-reveal
         tint="sage"
         glyph="album"
         :image="album"
@@ -80,6 +85,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         listened to.
       </FeaturePanel>
       <FeaturePanel
+        v-reveal
         tint="sky"
         glyph="edit"
         :image="tagEditor"
@@ -117,7 +123,10 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
     padding-bottom: 120px;
 
     > :nth-child(even) {
+      --reveal-delay: 120ms;
+
       translate: 0 120px;
+      transition-delay: var(--reveal-delay);
     }
   }
 }

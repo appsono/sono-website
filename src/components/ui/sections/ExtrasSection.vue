@@ -51,7 +51,7 @@ const extras = [
   <section class="extras">
     <h2 class="section-title">...but there is more</h2>
     <div class="grid">
-      <div v-for="extra in extras" :key="extra.title" class="extra">
+      <div v-for="extra in extras" :key="extra.title" v-reveal class="extra">
         <div
           class="chip"
           :style="{
@@ -89,6 +89,14 @@ const extras = [
 
   @include up(split) {
     grid-template-columns: repeat(3, 1fr);
+
+    > :nth-child(3n + 2) {
+      transition-delay: 80ms;
+    }
+
+    > :nth-child(3n) {
+      transition-delay: 160ms;
+    }
   }
 }
 

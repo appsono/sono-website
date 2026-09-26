@@ -110,4 +110,20 @@ defineProps({
     bottom: var(--y);
   }
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .shot img {
+    transition: translate 900ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .reveal:not(.revealed) .shot img {
+    translate: 0 120px;
+  }
+
+  .flip.reveal:not(.revealed) .shot img {
+    @include up(split) {
+      translate: 0 -120px;
+    }
+  }
+}
 </style>
