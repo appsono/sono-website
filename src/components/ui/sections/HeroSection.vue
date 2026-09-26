@@ -24,7 +24,7 @@ import nowPlaying from "../../../assets/screenshots/now-playing.webp";
           target="_blank"
           icon="googleplay"
         >
-          Get in on Google Play
+          Get it on Google Play
         </SonoButton>
         <SonoButton
           href="https://github.com/appsono/sono-new/releases/latest"
@@ -54,7 +54,7 @@ import nowPlaying from "../../../assets/screenshots/now-playing.webp";
 
 .hero {
   display: grid;
-  grid-area: 8px;
+  gap: 8px;
   min-height: 640px;
 
   @include up(split) {
