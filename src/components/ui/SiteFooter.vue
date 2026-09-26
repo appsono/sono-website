@@ -25,7 +25,7 @@ const repo = "https://github.com/appsono/sono-new/blob/main";
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 8px 24px;
-  padding: 40px 8px 56px;
+  padding: 40px 8px calc(var(--player-height) + 36px);
   color: var(--text-tertiary);
   font-size: 13px;
 }
