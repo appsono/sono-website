@@ -35,7 +35,10 @@ import nowPlaying from "../../../assets/screenshots/now-playing.webp";
           GitHub releases
         </SonoButton>
       </div>
-      <p class="license">Free and open source under GPL-3.0</p>
+      <p class="license">
+        Free and open source under GPL-3.0. Also on
+        <a href="https://sono.mathiiis.de/get" target="_blank">Obtanium</a>.
+      </p>
     </div>
 
     <div class="stage">
