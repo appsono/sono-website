@@ -18,7 +18,7 @@ defineProps({
   <SonoPanel :tint="tint" class="feature" :class="{ flip }">
     <SonoIcon :name="glyph" class="glyph" />
 
-    <div class="copy" :class="{ described: $slots.default }">
+    <div class="copy">
       <h2 class="headline"><slot name="title" /></h2>
       <p v-if="$slots.default" class="text"><slot /></p>
     </div>
@@ -77,10 +77,6 @@ defineProps({
 
 .headline {
   font-size: clamp(36px, 4.4vw, 52px);
-}
-
-.described .headline {
-  font-size: clamp(28px, 3.2vw, 36px);
 }
 
 .text {
