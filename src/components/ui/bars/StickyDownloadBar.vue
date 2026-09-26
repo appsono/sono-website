@@ -1,7 +1,6 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from "vue";
 import SonoButton from "../SonoButton.vue";
-import SonoIcon from "../../SonoIcon.vue";
 import logo from "../../../assets/logo.webp";
 
 const visible = ref(false);
@@ -14,7 +13,7 @@ onMounted(() => {
   observer.observe(document.getElementById("download"));
 });
 
-onBeforeUnmount(() => observer?.disonnect());
+onBeforeUnmount(() => observer?.disconnect());
 </script>
 
 <template>
@@ -56,11 +55,16 @@ onBeforeUnmount(() => observer?.disonnect());
   box-shadow: var(--shadow-nav);
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
   backdrop-filter: blur(20px) saturate(1.4);
+  visibility: hidden;
   transform: translate(-50%, calc(100% + 32px));
-  transition: transform var(--duration-slow) cubic-bezier(0.2, 0.9, 0.3, 1.2);
+  transition:
+    transform var(--duration-slow) cubic-bezier(0.2, 0.9, 0.3, 1.2),
+    visibility 0s var(--duration-slow);
 
   &.visible {
+    visibility: visible;
     transform: translate(-50%, 0);
+    transition-delay: 0s;
   }
 
   img {
