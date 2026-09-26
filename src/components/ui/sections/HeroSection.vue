@@ -60,6 +60,11 @@ import nowPlaying from "../../../assets/screenshots/now-playing.webp";
   gap: 8px;
   min-height: 640px;
 
+  span {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
   @include up(split) {
     grid-template-columns: 1.05fr 1fr;
     align-items: center;
@@ -163,6 +168,16 @@ import nowPlaying from "../../../assets/screenshots/now-playing.webp";
 
   .back {
     animation-delay: 150ms;
+  }
+
+  .headline span {
+    animation: sweep 700ms cubic-bezier(0.6, 0, 0.2, 1) 500ms both;
+  }
+}
+
+@keyframes sweep {
+  from {
+    background-size: 0% 100%;
   }
 }
 

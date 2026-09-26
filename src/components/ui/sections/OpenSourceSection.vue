@@ -89,6 +89,11 @@ const links = [
 
 .headline {
   font-size: clamp(32px, 4.4vw, 48px);
+
+  span {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
 }
 
 .copy p {
@@ -130,5 +135,16 @@ const links = [
 
 .icon {
   font-size: 24px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal .headline span {
+    background-size: 0% 100%;
+    transition: background-size 700ms cubic-bezier(0.6, 0, 0.2, 1) 500ms;
+  }
+
+  .revealed .headline span {
+    background-size: 100% 100%;
+  }
 }
 </style>
