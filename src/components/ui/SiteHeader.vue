@@ -10,7 +10,7 @@ import logo from "../../assets/logo.webp";
     </a>
     <nav aria-label="Main">
       <a href="#features">Features</a>
-      <a href="https://github.com/appsono/sono-new">GitHub</a>
+      <a href="https://github.com/appsono/sono-new" target="_blank">GitHub</a>
     </nav>
   </header>
 </template>
