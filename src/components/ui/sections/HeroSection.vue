@@ -14,7 +14,7 @@ import nowPlaying from "../../../assets/screenshots/now-playing.webp";
     <div class="copy">
       <h1 class="headline">Only you and <span>your music</span>.</h1>
       <p class="lede">
-        A local music player for Android, iOS, with Linux and Windows on the
+        A local music player for Android and iOS, with Linux and Windows on the
         way. Gapless playback, a nice equalizer and your library in the way you
         wanted it to look.
       </p>
