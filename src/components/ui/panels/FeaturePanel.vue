@@ -18,8 +18,9 @@ defineProps({
   <SonoPanel :tint="tint" class="feature" :class="{ flip }">
     <SonoIcon :name="glyph" class="glyph" />
 
-    <div class="copy">
+    <div class="copy" :class="{ described: $slots.default }">
       <h2 class="headline"><slot name="title" /></h2>
+      <p v-if="$slots.default" class="text"><slot /></p>
     </div>
 
     <div class="shot">
@@ -78,6 +79,16 @@ defineProps({
   font-size: clamp(36px, 4.4vw, 52px);
 }
 
+.described .headline {
+  font-size: clamp(28px, 3.2vw, 36px);
+}
+
+.text {
+  max-width: 36ch;
+  margin-top: 14px;
+  color: var(--text-secondary);
+}
+
 .shot {
   position: relative;
   flex: 1;
@@ -86,10 +97,14 @@ defineProps({
   img {
     position: absolute;
     top: var(--y);
-    left: var(--x);
+    left: 50%;
     width: 260px;
     transform: translateX(-50%) rotate(var(--tilt));
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2));
+
+    @include up(split) {
+      left: var(--x);
+    }
   }
 }
 

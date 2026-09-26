@@ -28,7 +28,8 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         :x="64"
         :y="24"
       >
-        <template #title>Your <span>Collection</span> at a glance</template>
+        <template #title>Your <span>Collection</span></template>
+        Recently added, albums, artists and recently played on one home screen.
       </FeaturePanel>
       <FeaturePanel
         tint="sky"
@@ -61,7 +62,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         :x="62"
         :y="20"
       >
-        <template #title>Precise <span>Audio Tuning</span></template>
+        <template #title><span>Audio Tuning</span></template>
       </FeaturePanel>
       <FeaturePanel
         tint="sage"
@@ -73,6 +74,8 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         :y="16"
       >
         <template #title>Complete <span>Album View</span></template>
+        Gapless transitions between songs, the way the albums was meant to be
+        listened to.
       </FeaturePanel>
       <FeaturePanel
         tint="sky"
@@ -80,7 +83,8 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         :image="tagEditor"
         alt="Sono tag editor"
       >
-        <template #title>Full <span>Metadata</span> Control</template>
+        <template #title><span>Metadata</span> Control</template>
+        Fix a wrong artist or missing track number without leaving the app.
       </FeaturePanel>
     </div>
   </section>
