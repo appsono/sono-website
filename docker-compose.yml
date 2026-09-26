@@ -1,6 +1,7 @@
 services:
   sono-website:
-    build: .
+    image: ghcr.io/appsono/sono-website:latest
+    pull_policy: always
     container_name: sono-website
     restart: unless-stopped
     ports:
