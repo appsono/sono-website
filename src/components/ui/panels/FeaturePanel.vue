@@ -66,7 +66,7 @@ defineProps({
 }
 
 .flip .copy {
-  @include up(tablet) {
+  @include up(split) {
     order: 2;
     padding-top: 0;
     padding-bottom: 44px;
