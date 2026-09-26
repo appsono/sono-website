@@ -2,6 +2,7 @@
 import ExtrasSection from "./components/ui/sections/ExtrasSection.vue";
 import FeaturesSection from "./components/ui/sections/FeaturesSection.vue";
 import HeroSection from "./components/ui/sections/HeroSection.vue";
+import OpenSourceSection from "./components/ui/sections/OpenSourceSection.vue";
 import SiteHeader from "./components/ui/SiteHeader.vue";
 </script>
 
@@ -12,6 +13,7 @@ import SiteHeader from "./components/ui/SiteHeader.vue";
       <HeroSection />
       <FeaturesSection />
       <ExtrasSection />
+      <OpenSourceSection />
     </main>
   </div>
 </template>

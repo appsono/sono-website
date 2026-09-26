@@ -4,7 +4,7 @@ defineProps({
     type: String,
     required: true,
     validator: (value) =>
-      ["pink", "peach", "sage", "lilac", "sky"].includes(value),
+      ["pink", "peach", "sage", "lilac", "sky", "butter"].includes(value),
   },
   tag: { type: String, default: "section" },
 });
@@ -25,7 +25,7 @@ defineProps({
   background: var(--tint);
 }
 
-@each $name in "pink", "peach", "sage", "lilac", "sky" {
+@each $name in "pink", "peach", "sage", "lilac", "sky", "butter" {
   .tint-#{$name} {
     --tint: var(--tint-#{$name});
     --mark: var(--mark-#{$name});
