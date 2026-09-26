@@ -8,6 +8,8 @@ defineProps({
   image: { type: String, required: true },
   alt: { type: String, required: true },
   tilt: { type: Number, default: 0 },
+  x: { type: Number, default: 50 },
+  y: { type: Number, default: 28 },
   flip: { type: Boolean, default: false },
 });
 </script>
@@ -18,14 +20,13 @@ defineProps({
 
     <div class="copy">
       <h2 class="headline"><slot name="title" /></h2>
-      <p class="text"><slot /></p>
     </div>
 
     <div class="shot">
       <img
         :src="image"
         :alt="alt"
-        :style="{ '--tilt': `${tilt}deg` }"
+        :style="{ '--tilt': `${tilt}deg`, '--x': `${x}%`, '--y': `${y}px` }"
         loading="lazy"
       />
     </div>
@@ -74,13 +75,7 @@ defineProps({
 }
 
 .headline {
-  font-size: clamp(28px, 3.2vw, 36px);
-}
-
-.text {
-  max-width: 36ch;
-  margin-top: 14px;
-  color: var(--text-secondary);
+  font-size: clamp(36px, 4.4vw, 52px);
 }
 
 .shot {
@@ -90,8 +85,8 @@ defineProps({
 
   img {
     position: absolute;
-    top: 28px;
-    left: 50%;
+    top: var(--y);
+    left: var(--x);
     width: 260px;
     transform: translateX(-50%) rotate(var(--tilt));
     filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.2));
@@ -101,7 +96,7 @@ defineProps({
 .flip .shot img {
   @include up(split) {
     top: auto;
-    bottom: 28px;
+    bottom: var(--y);
   }
 }
 </style>
