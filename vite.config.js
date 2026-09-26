@@ -28,6 +28,6 @@ export default defineConfig({
   plugins: [vue()],
 
   define: {
-    __COMMIT__: JSON.stringify(commitHash()),
+    __COMMIT__: JSON.stringify(process.env.COMMIT || commitHash()),
   },
 });

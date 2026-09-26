@@ -18,7 +18,7 @@ import nowPlaying from "../../../assets/screenshots/now-playing.webp";
         way. Gapless playback, a nice equalizer and your library in the way you
         wanted it to look.
       </p>
-      <div class="actions">
+      <div id="download" class="actions">
         <SonoButton
           href="https://play.google.com/store/apps/details?id=wtf.sono.app"
           target="_blank"
