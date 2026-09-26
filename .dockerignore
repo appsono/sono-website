@@ -1,3 +1,6 @@
 node_modules
 dist
-.git
+.git/*
+!.git/HEAD
+!.git/refs
+!.git/packed-refs
