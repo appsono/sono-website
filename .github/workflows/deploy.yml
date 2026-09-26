@@ -32,6 +32,6 @@ jobs:
             ghcr.io/appsono/sono-website:${{ github.sha }}
 
       - name: Trigger portainer redeploy
-        run: curl -fsSk -X POST "$WEBHOOK_URL"
+        run: curl -fsS -X POST "$WEBHOOK_URL"
         env:
           WEBHOOK_URL: ${{ secrets.PORTAINER_WEBHOOK_URL }}
