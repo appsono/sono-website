@@ -8,9 +8,11 @@
   }
 }
 
-@include face("Poppins", "Poppins-Regular", 400);
-@include face("Poppins", "Poppins-Medium", 500);
-@include face("Poppins", "Poppins-SemiBold", 600);
-@include face("Poppins", "Poppins-Bold", 700);
-@include face("Poppins", "Poppins-ExtraBold", 800);
+@include face("Manrope", "Poppins-ExtraLight", 200);
+@include face("Manrope", "Poppins-Light", 300);
+@include face("Manrope", "Poppins-Regular", 400);
+@include face("Manrope", "Poppins-Medium", 500);
+@include face("Manrope", "Poppins-SemiBold", 600);
+@include face("Manrope", "Poppins-Bold", 700);
+@include face("Manrope", "Poppins-ExtraBold", 800);
 @include face("Varela Round", "VarelaRound-Regular", 400);

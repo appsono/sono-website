@@ -4,6 +4,7 @@ import SonoIcon from "../SonoIcon.vue";
 defineProps({
   href: { type: String, required: true },
   icon: { type: String, default: null },
+  target: { type: String, default: null },
   variant: {
     type: String,
     default: "primary",
@@ -13,7 +14,7 @@ defineProps({
 </script>
 
 <template>
-  <a class="button" :class="variant" :href="href">
+  <a class="button" :class="variant" :href="href" :target="target">
     <SonoIcon v-if="icon" :name="icon" class="icon" />
     <slot />
   </a>
@@ -31,9 +32,7 @@ defineProps({
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
-  transition:
-    border-radius var(--duration-normal) ease,
-    background-color var(--duration-normal) ease;
+  transition: border-radius var(--duration-normal) ease;
 }
 
 .icon {
@@ -54,7 +53,7 @@ defineProps({
   background: var(--bg-container);
 
   &:hover {
-    background: var(--bg-surface-hover);
+    border-radius: var(--radius-sm);
   }
 }
 </style>
