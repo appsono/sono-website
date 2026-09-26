@@ -1,0 +1,7 @@
+services:
+  sono-website:
+    build: .
+    container_name: sono-website
+    restart: unless-stopped
+    ports:
+      - "${PORT:?set PORT in .env}:80"
