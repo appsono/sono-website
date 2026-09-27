@@ -37,7 +37,7 @@ import nowPlaying from "../../../assets/screenshots/now-playing.webp";
       </div>
       <p class="license">
         Free and open source under GPL-3.0. Also on
-        <a href="https://sono.mathiiis.de/get" target="_blank">Obtanium</a>.
+        <a href="https://sono.mathiiis.de/get" target="_blank">Obtainium</a>.
       </p>
     </div>
 
