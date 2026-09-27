@@ -21,7 +21,7 @@ const extras = [
     tint: "lilac",
     accent: "accent-purple",
     title: "Appearance",
-    text: "Customize the look of Sono with themese, button styles, home screen tinting and more to come.",
+    text: "Customize the look of Sono with themes, button styles, home screen tinting and more to come.",
   },
   {
     icon: "folder",

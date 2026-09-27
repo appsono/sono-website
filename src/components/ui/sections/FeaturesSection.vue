@@ -81,7 +81,7 @@ import tagEditor from "../../../assets/screenshots/tag-editor.webp";
         :y="16"
       >
         <template #title>Complete <span>Album View</span></template>
-        Gapless transitions between songs, the way the albums was meant to be
+        Gapless transitions between songs, the way the album was meant to be
         listened to.
       </FeaturePanel>
       <FeaturePanel
