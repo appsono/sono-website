@@ -35,6 +35,11 @@ a {
   color: inherit;
 }
 
+::selection {
+  color: var(--text-light);
+  background: var(--accent-start);
+}
+
 :focus-visible {
   outline: 3px solid var(--accent-start);
   outline-offset: 3px;

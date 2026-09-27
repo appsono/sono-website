@@ -33,6 +33,11 @@ defineProps({
   }
 }
 
+.panel :deep(::selection) {
+  color: var(--text-primary);
+  background: var(--mark);
+}
+
 :slotted(.glyph) {
   position: absolute;
   z-index: -1;
