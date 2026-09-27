@@ -1,8 +1,9 @@
 <script setup>
+import { computed } from "vue";
 import SonoIcon from "../../SonoIcon.vue";
 import SonoPanel from "../SonoPanel.vue";
 
-defineProps({
+const props = defineProps({
   tint: { type: String, required: true },
   glyph: { type: String, required: true },
   image: { type: String, required: true },
@@ -12,6 +13,8 @@ defineProps({
   y: { type: Number, default: 28 },
   flip: { type: Boolean, default: false },
 });
+
+const hoverTilt = computed(() => props.tilt + (props.tilt < 0 ? -3 : 3));
 </script>
 
 <template>
@@ -27,7 +30,12 @@ defineProps({
       <img
         :src="image"
         :alt="alt"
-        :style="{ '--tilt': `${tilt}deg`, '--x': `${x}%`, '--y': `${y}px` }"
+        :style="{
+          '--tilt': `${tilt}deg`,
+          '--tilt-hover': `${hoverTilt}deg`,
+          '--x': `${x}%`,
+          '--y': `${y}px`,
+        }"
         loading="lazy"
       />
     </div>
@@ -113,7 +121,24 @@ defineProps({
 
 @media (prefers-reduced-motion: no-preference) {
   .shot img {
-    transition: translate 900ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    --lift: -14px;
+
+    transition:
+      translate 900ms cubic-bezier(0.2, 0.8, 0.2, 1),
+      transform 400ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .flip .shot img {
+    @include up(split) {
+      --lift: 14px;
+    }
+  }
+
+  @media (hover: hover) {
+    .feature:hover .shot img {
+      transform: translateX(-50%) translateY(var(--lift))
+        rotate(var(--tilt-hover));
+    }
   }
 
   .reveal:not(.revealed) .shot img {
